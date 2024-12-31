@@ -1,0 +1,9 @@
+publicinterface  {
+
+    
+}
+
+
+public class Inter{
+
+}

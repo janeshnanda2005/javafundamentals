@@ -38,6 +38,29 @@
     }
 }*/
 
+
+class MyException extends Exception{
+
+    public MyException(String val) {
+        super(val);
+    }
+
+}
+
 public  class SimpleExce{
+
+    public static void main(String[] args) {
+        try {
+            int a = -10;
+            if (a<0){
+                throw new MyException("Sorry value is  below par level");
+            }
+        } catch (MyException e) {
+            System.err.println("Excecuted"+" "+e.getMessage());
+        }
+        finally{
+            System.out.println("Exited...");
+        }
+    }
     
 }
